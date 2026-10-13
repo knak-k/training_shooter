@@ -137,8 +137,8 @@ int main() {
         sf::Vector2f shipPosition = ship.getPosition(); // 自機の位置を変数に格納
         sf::Vector2f shipSize = ship.getSize(); // 自機のサイズを変数に格納
         
-        shipPosition.x = std::clamp(shipPosition.x, shipSize.x, static_cast<float>(windowSize.x) - shipSize.x);
-        shipPosition.y = std::clamp(shipPosition.y, shipSize.y, static_cast<float>(windowSize.y) - shipSize.y); // 自機をクランプ
+        shipPosition.x = std::clamp(shipPosition.x, shipSize.x / 2.f, static_cast<float>(windowSize.x) - shipSize.x / 2.f);
+        shipPosition.y = std::clamp(shipPosition.y, shipSize.y / 2.f, static_cast<float>(windowSize.y) - shipSize.y / 2.f); // 自機をクランプ（中心原点のためサイズの半分を差し引く）
 
         ship.setPosition(shipPosition); // clamp後位置を更新
 
