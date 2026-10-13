@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "SFML: build (g++)",
+            "type": "shell",
+            "command": "${env:MINGW_HOME}\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "-I", "${env:SFML_HOME}\\include",
+                "${workspaceFolder}\\attribute_shooting\\src\\main.cpp",
+                "-o",
+                "${workspaceFolder}\\attribute_shooting\\build\\main.exe",
+                "-L", "${env:SFML_HOME}\\lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\attribute_shooting"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
