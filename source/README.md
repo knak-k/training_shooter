@@ -57,9 +57,11 @@ C++ / SFML で開発した自主制作ゲームです。提出物として、研
 ```
 source/
 ├── src/main.cpp       ゲーム本体のソースコード
+├── assets/fonts/      同梱フォント（Noto Sans JP）
 ├── .vscode/           VS Codeのビルドタスク定義（g++でのビルド手順）
 └── README.md          このファイル
 bin/
 ├── HorseTrainingShooter.exe   実行ファイル
-└── *.dll                      実行に必要なランタイムDLL（SFML・MinGW）
+├── assets/fonts/              同梱フォント（Noto Sans JP）
+└── *.dll                      実行に必要なランタイムDLL（SFML・MinGW等）
 ```
