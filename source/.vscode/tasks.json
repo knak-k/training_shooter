@@ -8,17 +8,18 @@
             "args": [
                 "-g",
                 "-std=c++17",
+                "-mwindows",
                 "-I", "${env:SFML_HOME}\\include",
-                "${workspaceFolder}\\attribute_shooting\\src\\main.cpp",
+                "${workspaceFolder}\\src\\main.cpp",
                 "-o",
-                "${workspaceFolder}\\attribute_shooting\\build\\main.exe",
+                "${workspaceFolder}\\build\\HorseTrainingShooter.exe",
                 "-L", "${env:SFML_HOME}\\lib",
                 "-lsfml-graphics",
                 "-lsfml-window",
                 "-lsfml-system"
             ],
             "options": {
-                "cwd": "${workspaceFolder}\\attribute_shooting"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": ["$gcc"],
             "group": {

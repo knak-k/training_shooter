@@ -81,7 +81,7 @@ int main() {
     bool KeyRWasPressed = false; //Rキーの押下状態（リスタートの際のエッジ検出）
 
     sf::Font font;
-    if(!font.openFromFile("C:/Windows/Fonts/arial.ttf")){
+    if(!font.openFromFile("assets/fonts/NotoSansJP-VF.ttf")){
 
     }
 
